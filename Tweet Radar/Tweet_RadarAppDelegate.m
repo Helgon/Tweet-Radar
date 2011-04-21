@@ -7,16 +7,19 @@
 //
 
 #import "Tweet_RadarAppDelegate.h"
+#import "TweetRadarViewController.h"
 
 @implementation Tweet_RadarAppDelegate
 
 
-@synthesize window=_window;
+@synthesize window;;
+@synthesize viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [self.window makeKeyAndVisible];
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
     return YES;
 }
 
@@ -61,7 +64,8 @@
 
 - (void)dealloc
 {
-    [_window release];
+    [viewController release];
+    [window release];
     [super dealloc];
 }
 
