@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C5E793313602E9000D62074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793213602E9000D62074 /* UIKit.framework */; };
+		7C5E793513602E9000D62074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793413602E9000D62074 /* Foundation.framework */; };
+		7C5E793713602E9000D62074 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793613602E9000D62074 /* CoreGraphics.framework */; };
+		7C5E793D13602E9000D62074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E793B13602E9000D62074 /* InfoPlist.strings */; };
+		7C5E794013602E9000D62074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E793F13602E9000D62074 /* main.m */; };
+		7C5E794313602E9000D62074 /* Tweet_RadarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E794213602E9000D62074 /* Tweet_RadarAppDelegate.m */; };
+		7C5E794613602E9000D62074 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E794413602E9000D62074 /* MainWindow.xib */; };
+		7C5E794D13602E9000D62074 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793213602E9000D62074 /* UIKit.framework */; };
+		7C5E794E13602E9000D62074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793413602E9000D62074 /* Foundation.framework */; };
+		7C5E794F13602E9000D62074 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E793613602E9000D62074 /* CoreGraphics.framework */; };
+		7C5E795713602E9000D62074 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E795513602E9000D62074 /* InfoPlist.strings */; };
+		7C5E795A13602E9000D62074 /* Tweet_RadarTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E795913602E9000D62074 /* Tweet_RadarTests.h */; };
+		7C5E795C13602E9000D62074 /* Tweet_RadarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E795B13602E9000D62074 /* Tweet_RadarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C5E795013602E9000D62074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C5E792513602E9000D62074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C5E792D13602E9000D62074;
+			remoteInfo = "Tweet Radar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C5E792E13602E9000D62074 /* Tweet Radar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tweet Radar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5E793213602E9000D62074 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C5E793413602E9000D62074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7C5E793613602E9000D62074 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7C5E793A13602E9000D62074 /* Tweet Radar-Info.plist */ = {isa = PBXFileReference; path = "Tweet Radar-Info.plist"; sourceTree = "<group>"; };
+		7C5E793C13602E9000D62074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C5E793E13602E9000D62074 /* Tweet Radar-Prefix.pch */ = {isa = PBXFileReference; path = "Tweet Radar-Prefix.pch"; sourceTree = "<group>"; };
+		7C5E793F13602E9000D62074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C5E794113602E9000D62074 /* Tweet_RadarAppDelegate.h */ = {isa = PBXFileReference; path = Tweet_RadarAppDelegate.h; sourceTree = "<group>"; };
+		7C5E794213602E9000D62074 /* Tweet_RadarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet_RadarAppDelegate.m; sourceTree = "<group>"; };
+		7C5E794513602E9000D62074 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7C5E794C13602E9000D62074 /* Tweet RadarTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tweet RadarTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5E795413602E9000D62074 /* Tweet RadarTests-Info.plist */ = {isa = PBXFileReference; path = "Tweet RadarTests-Info.plist"; sourceTree = "<group>"; };
+		7C5E795613602E9000D62074 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7C5E795813602E9000D62074 /* Tweet RadarTests-Prefix.pch */ = {isa = PBXFileReference; path = "Tweet RadarTests-Prefix.pch"; sourceTree = "<group>"; };
+		7C5E795913602E9000D62074 /* Tweet_RadarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweet_RadarTests.h; sourceTree = "<group>"; };
+		7C5E795B13602E9000D62074 /* Tweet_RadarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet_RadarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C5E792B13602E9000D62074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E793313602E9000D62074 /* UIKit.framework in Frameworks */,
+				7C5E793513602E9000D62074 /* Foundation.framework in Frameworks */,
+				7C5E793713602E9000D62074 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5E794813602E9000D62074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E794D13602E9000D62074 /* UIKit.framework in Frameworks */,
+				7C5E794E13602E9000D62074 /* Foundation.framework in Frameworks */,
+				7C5E794F13602E9000D62074 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C5E792313602E9000D62074 = {
+			isa = PBXGroup;
+			children = (
+				7C5E793813602E9000D62074 /* Tweet Radar */,
+				7C5E795213602E9000D62074 /* Tweet RadarTests */,
+				7C5E793113602E9000D62074 /* Frameworks */,
+				7C5E792F13602E9000D62074 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C5E792F13602E9000D62074 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E792E13602E9000D62074 /* Tweet Radar.app */,
+				7C5E794C13602E9000D62074 /* Tweet RadarTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C5E793113602E9000D62074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E793213602E9000D62074 /* UIKit.framework */,
+				7C5E793413602E9000D62074 /* Foundation.framework */,
+				7C5E793613602E9000D62074 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C5E793813602E9000D62074 /* Tweet Radar */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E794113602E9000D62074 /* Tweet_RadarAppDelegate.h */,
+				7C5E794213602E9000D62074 /* Tweet_RadarAppDelegate.m */,
+				7C5E794413602E9000D62074 /* MainWindow.xib */,
+				7C5E793913602E9000D62074 /* Supporting Files */,
+			);
+			path = "Tweet Radar";
+			sourceTree = "<group>";
+		};
+		7C5E793913602E9000D62074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E793A13602E9000D62074 /* Tweet Radar-Info.plist */,
+				7C5E793B13602E9000D62074 /* InfoPlist.strings */,
+				7C5E793E13602E9000D62074 /* Tweet Radar-Prefix.pch */,
+				7C5E793F13602E9000D62074 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C5E795213602E9000D62074 /* Tweet RadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E795913602E9000D62074 /* Tweet_RadarTests.h */,
+				7C5E795B13602E9000D62074 /* Tweet_RadarTests.m */,
+				7C5E795313602E9000D62074 /* Supporting Files */,
+			);
+			path = "Tweet RadarTests";
+			sourceTree = "<group>";
+		};
+		7C5E795313602E9000D62074 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E795413602E9000D62074 /* Tweet RadarTests-Info.plist */,
+				7C5E795513602E9000D62074 /* InfoPlist.strings */,
+				7C5E795813602E9000D62074 /* Tweet RadarTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C5E792D13602E9000D62074 /* Tweet Radar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5E795F13602E9000D62074 /* Build configuration list for PBXNativeTarget "Tweet Radar" */;
+			buildPhases = (
+				7C5E792A13602E9000D62074 /* Sources */,
+				7C5E792B13602E9000D62074 /* Frameworks */,
+				7C5E792C13602E9000D62074 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tweet Radar";
+			productName = "Tweet Radar";
+			productReference = 7C5E792E13602E9000D62074 /* Tweet Radar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C5E794B13602E9000D62074 /* Tweet RadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C5E796213602E9000D62074 /* Build configuration list for PBXNativeTarget "Tweet RadarTests" */;
+			buildPhases = (
+				7C5E794713602E9000D62074 /* Sources */,
+				7C5E794813602E9000D62074 /* Frameworks */,
+				7C5E794913602E9000D62074 /* Resources */,
+				7C5E794A13602E9000D62074 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C5E795113602E9000D62074 /* PBXTargetDependency */,
+			);
+			name = "Tweet RadarTests";
+			productName = "Tweet RadarTests";
+			productReference = 7C5E794C13602E9000D62074 /* Tweet RadarTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C5E792513602E9000D62074 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 7C5E792813602E9000D62074 /* Build configuration list for PBXProject "Tweet Radar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7C5E792313602E9000D62074;
+			productRefGroup = 7C5E792F13602E9000D62074 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C5E792D13602E9000D62074 /* Tweet Radar */,
+				7C5E794B13602E9000D62074 /* Tweet RadarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C5E792C13602E9000D62074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E793D13602E9000D62074 /* InfoPlist.strings in Resources */,
+				7C5E794613602E9000D62074 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5E794913602E9000D62074 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E795713602E9000D62074 /* InfoPlist.strings in Resources */,
+				7C5E795A13602E9000D62074 /* Tweet_RadarTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C5E794A13602E9000D62074 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C5E792A13602E9000D62074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E794013602E9000D62074 /* main.m in Sources */,
+				7C5E794313602E9000D62074 /* Tweet_RadarAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5E794713602E9000D62074 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C5E795C13602E9000D62074 /* Tweet_RadarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C5E795113602E9000D62074 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C5E792D13602E9000D62074 /* Tweet Radar */;
+			targetProxy = 7C5E795013602E9000D62074 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C5E793B13602E9000D62074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C5E793C13602E9000D62074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7C5E794413602E9000D62074 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C5E794513602E9000D62074 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		7C5E795513602E9000D62074 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C5E795613602E9000D62074 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C5E795D13602E9000D62074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C5E795E13602E9000D62074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7C5E796013602E9000D62074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tweet Radar/Tweet Radar-Prefix.pch";
+				INFOPLIST_FILE = "Tweet Radar/Tweet Radar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7C5E796113602E9000D62074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tweet Radar/Tweet Radar-Prefix.pch";
+				INFOPLIST_FILE = "Tweet Radar/Tweet Radar-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7C5E796313602E9000D62074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tweet Radar.app/Tweet Radar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tweet RadarTests/Tweet RadarTests-Prefix.pch";
+				INFOPLIST_FILE = "Tweet RadarTests/Tweet RadarTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7C5E796413602E9000D62074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tweet Radar.app/Tweet Radar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tweet RadarTests/Tweet RadarTests-Prefix.pch";
+				INFOPLIST_FILE = "Tweet RadarTests/Tweet RadarTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C5E792813602E9000D62074 /* Build configuration list for PBXProject "Tweet Radar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5E795D13602E9000D62074 /* Debug */,
+				7C5E795E13602E9000D62074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C5E795F13602E9000D62074 /* Build configuration list for PBXNativeTarget "Tweet Radar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5E796013602E9000D62074 /* Debug */,
+				7C5E796113602E9000D62074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C5E796213602E9000D62074 /* Build configuration list for PBXNativeTarget "Tweet RadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C5E796313602E9000D62074 /* Debug */,
+				7C5E796413602E9000D62074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C5E792513602E9000D62074 /* Project object */;
+}
