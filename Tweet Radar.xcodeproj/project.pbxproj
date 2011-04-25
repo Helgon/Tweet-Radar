@@ -43,6 +43,14 @@
 		7C5E79B613602F1900D62074 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E79B513602F1900D62074 /* libxml2.dylib */; };
 		7C5E79C0136031EC00D62074 /* TweetRadarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E79BE136031EC00D62074 /* TweetRadarViewController.m */; };
 		7C5E79C1136031EC00D62074 /* TweetRadarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E79BF136031EC00D62074 /* TweetRadarViewController.xib */; };
+		7CDE1A691362D15900C2682E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDE1A681362D15900C2682E /* MapKit.framework */; };
+		7CEFD2F013625429002CC818 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2E513625429002CC818 /* NSObject+SBJSON.m */; };
+		7CEFD2F113625429002CC818 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2E713625429002CC818 /* NSString+SBJSON.m */; };
+		7CEFD2F213625429002CC818 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2E913625429002CC818 /* SBJSON.m */; };
+		7CEFD2F313625429002CC818 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2EB13625429002CC818 /* SBJsonBase.m */; };
+		7CEFD2F413625429002CC818 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2ED13625429002CC818 /* SBJsonParser.m */; };
+		7CEFD2F513625429002CC818 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2EF13625429002CC818 /* SBJsonWriter.m */; };
+		7CEFD2F9136255DE002CC818 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CEFD2F8136255DE002CC818 /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +140,22 @@
 		7C5E79BD136031EC00D62074 /* TweetRadarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetRadarViewController.h; sourceTree = "<group>"; };
 		7C5E79BE136031EC00D62074 /* TweetRadarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetRadarViewController.m; sourceTree = "<group>"; };
 		7C5E79BF136031EC00D62074 /* TweetRadarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetRadarViewController.xib; sourceTree = "<group>"; };
+		7CDE1A681362D15900C2682E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7CEFD2E313625429002CC818 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7CEFD2E413625429002CC818 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7CEFD2E513625429002CC818 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		7CEFD2E613625429002CC818 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7CEFD2E713625429002CC818 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		7CEFD2E813625429002CC818 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7CEFD2E913625429002CC818 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		7CEFD2EA13625429002CC818 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7CEFD2EB13625429002CC818 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		7CEFD2EC13625429002CC818 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7CEFD2ED13625429002CC818 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		7CEFD2EE13625429002CC818 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7CEFD2EF13625429002CC818 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7CEFD2F7136255DE002CC818 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		7CEFD2F8136255DE002CC818 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CDE1A691362D15900C2682E /* MapKit.framework in Frameworks */,
 				7C5E79B613602F1900D62074 /* libxml2.dylib in Frameworks */,
 				7C5E793313602E9000D62074 /* UIKit.framework in Frameworks */,
 				7C5E793513602E9000D62074 /* Foundation.framework in Frameworks */,
@@ -183,6 +208,7 @@
 		7C5E793113602E9000D62074 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CDE1A681362D15900C2682E /* MapKit.framework */,
 				7C5E793213602E9000D62074 /* UIKit.framework */,
 				7C5E793413602E9000D62074 /* Foundation.framework */,
 				7C5E793613602E9000D62074 /* CoreGraphics.framework */,
@@ -198,6 +224,8 @@
 				7C5E794213602E9000D62074 /* Tweet_RadarAppDelegate.m */,
 				7C5E79BD136031EC00D62074 /* TweetRadarViewController.h */,
 				7C5E79BE136031EC00D62074 /* TweetRadarViewController.m */,
+				7CEFD2F7136255DE002CC818 /* Tweet.h */,
+				7CEFD2F8136255DE002CC818 /* Tweet.m */,
 				7C5E79BF136031EC00D62074 /* TweetRadarViewController.xib */,
 				7C5E794413602E9000D62074 /* MainWindow.xib */,
 				7C5E793913602E9000D62074 /* Supporting Files */,
@@ -239,6 +267,7 @@
 		7C5E796513602EDD00D62074 /* Twitter+OAuth */ = {
 			isa = PBXGroup;
 			children = (
+				7CEFD2E213625429002CC818 /* JSON */,
 				7C5E796613602EDD00D62074 /* Libraries & Headers */,
 				7C5E797A13602EDD00D62074 /* MGTwitterEngine */,
 				7C5E799B13602EDD00D62074 /* SAOAuthTwitterEngine */,
@@ -328,6 +357,26 @@
 				7C5E79A013602EDD00D62074 /* twitter_load.png */,
 			);
 			path = SAOAuthTwitterEngine;
+			sourceTree = "<group>";
+		};
+		7CEFD2E213625429002CC818 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7CEFD2E313625429002CC818 /* JSON.h */,
+				7CEFD2E413625429002CC818 /* NSObject+SBJSON.h */,
+				7CEFD2E513625429002CC818 /* NSObject+SBJSON.m */,
+				7CEFD2E613625429002CC818 /* NSString+SBJSON.h */,
+				7CEFD2E713625429002CC818 /* NSString+SBJSON.m */,
+				7CEFD2E813625429002CC818 /* SBJSON.h */,
+				7CEFD2E913625429002CC818 /* SBJSON.m */,
+				7CEFD2EA13625429002CC818 /* SBJsonBase.h */,
+				7CEFD2EB13625429002CC818 /* SBJsonBase.m */,
+				7CEFD2EC13625429002CC818 /* SBJsonParser.h */,
+				7CEFD2ED13625429002CC818 /* SBJsonParser.m */,
+				7CEFD2EE13625429002CC818 /* SBJsonWriter.h */,
+				7CEFD2EF13625429002CC818 /* SBJsonWriter.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +506,13 @@
 				7C5E79B213602EDE00D62074 /* SA_OAuthTwitterController.m in Sources */,
 				7C5E79B313602EDE00D62074 /* SA_OAuthTwitterEngine.m in Sources */,
 				7C5E79C0136031EC00D62074 /* TweetRadarViewController.m in Sources */,
+				7CEFD2F013625429002CC818 /* NSObject+SBJSON.m in Sources */,
+				7CEFD2F113625429002CC818 /* NSString+SBJSON.m in Sources */,
+				7CEFD2F213625429002CC818 /* SBJSON.m in Sources */,
+				7CEFD2F313625429002CC818 /* SBJsonBase.m in Sources */,
+				7CEFD2F413625429002CC818 /* SBJsonParser.m in Sources */,
+				7CEFD2F513625429002CC818 /* SBJsonWriter.m in Sources */,
+				7CEFD2F9136255DE002CC818 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +695,7 @@
 				7C5E796113602E9000D62074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C5E796213602E9000D62074 /* Build configuration list for PBXNativeTarget "Tweet RadarTests" */ = {
 			isa = XCConfigurationList;
@@ -647,6 +704,7 @@
 				7C5E796413602E9000D62074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
