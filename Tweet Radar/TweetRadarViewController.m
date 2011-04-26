@@ -28,6 +28,7 @@
 @synthesize listView;
 @synthesize listtweets;
 @synthesize mapView;
+@synthesize spinner;
 
 
 #pragma mark Custom Methods
@@ -39,6 +40,54 @@
 	
 	//Twitter Integration Code Goes Here
 	[_engine sendUpdate:tweetTextField.text];
+}
+
+-(IBAction)getPosition:(id)sender
+{
+    CLLocation *userLoc = mapView.userLocation.location;
+    CLLocationCoordinate2D userCoordinate = userLoc.coordinate;
+    [mapView setCenterCoordinate: userCoordinate 
+                        animated: YES];
+}
+
+-(IBAction)scanArea:(id)sender
+{
+    [spinner startAnimating];
+
+    responseData = [[NSMutableData data] retain];
+	tweets = [NSMutableArray array];
+    
+    MKCoordinateRegion region = mapView.region;
+    CLLocationCoordinate2D centerCoordinate = mapView.centerCoordinate;
+    
+    CLLocation * newLocation = [[[CLLocation alloc] initWithLatitude:centerCoordinate.latitude+region.span.latitudeDelta longitude:centerCoordinate.longitude+region.span.longitudeDelta] autorelease];
+    CLLocation * centerLocation = [[[CLLocation alloc] initWithLatitude:centerCoordinate.latitude longitude:centerCoordinate.longitude] autorelease];
+    CLLocationDistance distance = [centerLocation distanceFromLocation:newLocation]; // in meters
+    distance = distance / 1000; // in km
+    NSString *distString = [NSString stringWithFormat:@"%.0f", distance];
+    NSString *latitude = [NSString stringWithFormat:@"%f", centerCoordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", centerCoordinate.longitude];
+
+   //NSLog(@"%@, %@, %@", latitude, longitude, distString);
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://search.twitter.com/search.json?geocode="];
+    urlString = [urlString stringByAppendingString:latitude];
+    urlString = [urlString stringByAppendingString:@"%2C"];
+    urlString = [urlString stringByAppendingString:longitude];
+    urlString = [urlString stringByAppendingString:@"%2C"];
+    urlString = [urlString stringByAppendingString:distString];
+    urlString = [urlString stringByAppendingString:@"km"];
+    urlString = [urlString stringByAppendingString:@"&rpp=100"];
+
+
+    NSLog(urlString);
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:
+							 [NSURL URLWithString:urlString]];
+    
+    
+	[[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
 }
 
 -(IBAction)changeView:(id)sender
@@ -67,9 +116,18 @@
 
 - (void)viewDidAppear: (BOOL)animated {
     
-    responseData = [[NSMutableData data] retain];
-	tweets = [NSMutableArray array];
-        
+    MKCoordinateRegion startCoords;
+    
+    startCoords.center.latitude = 35.637209;
+    startCoords.center.longitude = 139.746094;
+    startCoords.span.latitudeDelta = 0.39;
+    startCoords.span.longitudeDelta = 0.34;
+    
+    mapView.region = startCoords;
+    
+    //Start MGTwitter engine
+    
+     /**   
 	if(!_engine){
 		_engine = [[SA_OAuthTwitterEngine alloc] initOAuthWithDelegate:self];
 		_engine.consumerKey    = kOAuthConsumerKey;
@@ -81,10 +139,15 @@
 	if (controller){
 		[self presentModalViewController: controller animated: YES];
 	}
+      **/
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:
-							 [NSURL URLWithString:@"http://search.twitter.com/search.json?geocode=37.781157%2C-122.398720%2C4km"]];
-	[[NSURLConnection alloc] initWithRequest:request delegate:self];
+    self.mapView.showsUserLocation = YES;
+    
+    spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    CGRect cgRect =[[UIScreen mainScreen] bounds];
+    CGSize cgSize = cgRect.size;
+    [spinner setCenter:CGPointMake(cgSize.width/2.0, cgSize.height/2.0)]; // I do this because I'm in landscape mode
+    [self.view addSubview:spinner]; // spinner is not visible until started
     
 }
 
@@ -102,6 +165,7 @@
 	[tweetTextField release];
     [listView release];
     [listtweets release];
+    [spinner release];
     [super dealloc];
 }
 
@@ -133,6 +197,15 @@
     //[window makeKeyAndVisible];
     NSLog(@"%@", allTweets);
     [listView reloadData];
+    
+    //Scroll table to top
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [listView scrollToRowAtIndexPath:indexPath
+                          atScrollPosition:UITableViewScrollPositionTop
+                                  animated:NO];
+    
+    [spinner stopAnimating];
+
 	
 }
 

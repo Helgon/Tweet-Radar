@@ -23,6 +23,7 @@
     NSArray *listtweets;
     UITableView *listView;
     IBOutlet MKMapView *mapView;
+    UIActivityIndicatorView *spinner;
 
 }
 
@@ -31,11 +32,15 @@
 @property(nonatomic,retain) IBOutlet UITableView *listView;
 @property (nonatomic, retain) NSArray *listtweets;
 @property (nonatomic, retain) MKMapView *mapView;
+@property (nonatomic, retain) UIActivityIndicatorView *spinner;
 
 
 
 -(IBAction)updateTwitter:(id)sender; 
 -(IBAction)changeView:(id)sender; 
+-(IBAction)scanArea:(id)sender; 
+-(IBAction)getPosition:(id)sender;
+
 
 
 @end
